@@ -8,7 +8,7 @@ class Queue{
         }
         else if(rear==0 && front==0 ){
         
-            front =rear=0;
+            front=rear=0;
             queue[rear]=n;
 
         }else{
