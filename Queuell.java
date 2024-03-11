@@ -42,10 +42,10 @@ public class Queuell {
         if (front == null && rear == null) {
             System.out.println("Linked list is empty");
 
-        } else {
+        } else {  
             System.out.println("The pop element is " + front.data);
             front = front.next;
-            temp.next = null;
+            temp.next = null; 
 
         }
     }
@@ -58,7 +58,7 @@ public class Queuell {
         o1.display();
         o1.dequeu();
         o1.display();
-
+ 
     }
 
 }
