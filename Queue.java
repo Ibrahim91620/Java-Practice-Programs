@@ -50,15 +50,8 @@ class Queue{
         o1.enqueue(12);
         o1.enqueue(15);
         o1.enqueue(15);
-        o1.enqueue(15);
-        o1.enqueue(15);
-        o1.enqueue(15);
-        o1.enqueue(15);
-        o1.enqueue(15);
-        // o1.enqueue(15);
-        // o1.enqueue(15);
-        // o1.enqueue(15);
-        // o1.enqueue(15);
+       
+       
         o1.display();
         o1.dequeue();
         o1.display();

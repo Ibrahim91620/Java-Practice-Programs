@@ -14,7 +14,9 @@ public class Creation {
         Node temp=head;
         while (temp!=null) {
             System.out.print(temp.data+" ");
+
             temp=temp.next;
+
             
         }
      System.out.println();
@@ -31,7 +33,7 @@ public class Creation {
 	
 	public static Node insertatbegin(Node head,int x){
 		
-		Node newNode= new Node(12);
+		Node newNode= new Node(x);
 		newNode.next=head;
 		newNode.prev=null;
 	
@@ -54,6 +56,7 @@ public class Creation {
 		
 		Node temp=head;
 		while(temp.next!=null){
+			
 			temp=temp.next;
 		
 	}
@@ -62,7 +65,8 @@ public class Creation {
 	t.prev=temp;
 	}
 	
-	public static void deleteadindex(Node head,int pos){
+	public static void deleteadindex(Node head,int pos)
+	{
 		Node temp=head;
 		
 		for(int i=0; i<pos; i++){
@@ -96,7 +100,7 @@ public class Creation {
 
     public static void main(String[] args) {
         //2 10 5 6
-        
+         
         Node a =new Node(2);
         Node b =new Node(5);
         Node c =new Node(6);
@@ -118,19 +122,20 @@ public class Creation {
 		// deleteadindex(a,0);
 		// display(a);
 		
-		//Node newHead=insertatbegin(a,12);
+		Node newHead=insertatbegin(a,12);
 		
-		//display(newHead);
+		display(newHead);
 		
+		
+		insertattail(a,15);
+		
+		display(a);
+
 		deleteadindex(a,2);
 		display(a);
-		//insertattail(a,15);
-		
-		//display(a);
-		
-		//deleteHead(a);
-		//display(a);
-		//displayrev(c);
+		deleteHead(a);
+		display(a);
+		displayrev(e);
 		
 		//displayrandom(b);
     }
